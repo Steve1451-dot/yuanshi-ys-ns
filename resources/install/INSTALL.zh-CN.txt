@@ -1,0 +1,30 @@
+yuanshi launcher @VERSION@
+
+安装：
+1. 将本包中的 switch 文件夹合并到 SD 卡根目录。
+2. 使用完整应用模式进入 hbmenu / sphaira。
+3. 打开 yuanshi launcher。
+
+目录与状态：
+- 只使用 switch/yuanshi-launcher/yuanshi-launcher.nro 和同目录数据。
+- 不读取或自动迁移旧目录，第一次使用需重新登录、设置本地配置。
+- 不自动删除旧数据；之后在新目录内更新可保留配置。
+- 本包不含登录凭据、自动测试或设备信息同意标记。
+- 右下角网络 RTT 为透明文字；未知时显示 -- ms。
+- 所有游戏统一原生手柄操作，键位在游戏内设置；不再提供本地改键或模式切换。
+- 原神游戏 SDK 配置自动保存到 SD 卡。默认回传手柄键位与游戏自己的输入模式设置（含“主界面控制设备自动切换”），不强制改写任何开关。
+- ys 标题入口固定使用移动端触摸基线，不再由旧 touch-first / entry-mix / key-title-probe 等测试标记切换入口；原有配置文件不删除。
+- 如需只保存、不回传，在 switch/yuanshi-launcher/ 放置空文件 cloudgenshin-native-config.txt（或内容为 CGNX_NATIVE_CONFIG_RESTORE_OFF_V1）。
+- 如需复现旧问题做 A/B，放置内容为一行 CGNX_NATIVE_CONFIG_RESTORE_V1 的 cloudgenshin-native-config.txt；该路径会强制开启输入自动切换，可能回到键盘模式。
+- 每次有已保存配置时，会在同目录另存 game-sdk-hk4e-session-start.json（会话启动快照）和 game-sdk-hk4e-structure.txt（配置结构报告，只含字段名/类型/数量/根元素名，不含映射内容）。两者都不是日志，也不含登录凭据。
+- 悬浮球中的 ZL 体感辅助为独立开关，保留体感转右摇杆，不修改按钮分配。
+- game-sdk-data.key 及 game-sdk-hk4e- 开头文件不是日志，不要上传或分享。
+- bt 仍在适配，1001_2 仍在排查。
+
+包含：
+- switch/yuanshi-launcher/yuanshi-launcher.nro
+- switch/yuanshi-launcher/icon.jpg
+- switch/yuanshi-launcher/icon.png
+- README.md
+- LICENSE
+- docs/（有发布说明时包含）
