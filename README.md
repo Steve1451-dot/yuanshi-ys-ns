@@ -2,6 +2,8 @@
 
 面向 Nintendo Switch 的非官方 YS 云游戏客户端。可在 Switch 原生系统下通过 hbmenu 使用。
 
+支持在 Switch 原生系统上串流 **云原神（Genshin Impact）**。项目由社区维护，与游戏发行方及任天堂无隶属关系。
+
 [下载 0.2.152 alpha](https://github.com/Steve1451-dot/yuanshi-ys-ns/releases/tag/v0.2.152)
 
 ![YS 串流画面](docs/screenshots/ys-streaming-gameplay.jpg)
